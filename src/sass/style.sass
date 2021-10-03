@@ -137,37 +137,47 @@ nav
   padding: 20px 0 67px 0
 
 .label
-  display: block
-  margin: 0 auto
-  font-weight: normal
-  font-size: 11px
-  text-align: center
-  text-transform: uppercase
-  color: #FFFFFF
-  background: black
-  height: 24px
-  width: 112px
-  padding: 5px 12px
+	position: relative
+	margin: 0 auto
+	height: 24px
+	width: 112px
+	padding: 5px 12px
+	background-color: #000000
+	color: #ffffff
+	font-size: 11px
+	font-weight: 300
+	text-transform: uppercase
+	text-align: center
+	z-index: 2
+	&_white
+		background-color: #fff
+		color: #000
 
 .title
-  margin-top: 28px
-  margin-bottom: 0
-  padding: 0 0 0 0
-  font-weight: 700
-  font-size: 38px
-  text-align: center
-  text-transform: uppercase
-  color: #222222
+	position: relative
+	margin-bottom: 0
+	margin-top: 38px
+	color: #222222
+	font-size: 38px
+	line-height: 38px
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+	z-index: 2
+	&_white
+		color: #fff
 
 .subtitle
-	// margin-top: 19px
-	margin: 0 auto
-	font-weight: normal
-	font-size: 17px
-	line-height: 21px
-	text-align: center
+	position: relative
+	margin-top: 19px
 	color: #222222
+	font-size: 17px
+	font-weight: 400
 	text-align: center
+	z-index: 2
+	&_white
+		margin-top: 5px
+		color: #fff
 
 .reasons .reasons_block
   /* margin: 0 auto;
@@ -250,3 +260,28 @@ nav
 			left: 50%
 			transform: translateX(-50%)
 			cursor: pointer
+
+.choice
+	position: relative
+	min-height: 895px
+	padding: 57px 0 138px 0
+	background: #fff
+	&_img
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
+	&_descr
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+	.black
+		position: absolute
+		top: 0
+		left: 0
+		height: 499px
+		width: 100%
+		background-color: #070716
+		z-index: 1
