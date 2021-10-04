@@ -1,6 +1,11 @@
 $main-color: #1eacc7
 $second-color: #ff5656
 
+=btn_hover
+	&:hover
+		background-image: none
+		background: $main-color
+
 *
   font-family: 'Roboto', sans-serif
 
@@ -81,6 +86,7 @@ nav
 		text-transform: uppercase
 		color: #FFFFFF
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		+btn_hover
 
 .promo
 	min-height: 800px
@@ -125,6 +131,7 @@ nav
 		text-transform: uppercase
 		color: #FFFFFF
 		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+		+btn_hover
 
 .reasons
 	min-height: 151px
@@ -248,7 +255,26 @@ nav
 			left: 50%
 			transform: translateX(-50%)
 			cursor: pointer
-
+			&:before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main-color
+				transition: 0.3s all
+			&:after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block
+				width: 2px
+				height: 14px
+				background-color: $main-color
+				transition: 0.3s all
+			&:hover
+				&:before, &:after
+					background-color: $second-color
 .choice
 	position: relative
 	min-height: 895px
