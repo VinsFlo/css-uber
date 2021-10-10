@@ -85,52 +85,49 @@ nav
 	background: url('/src/img/bg/uber_bg.jpg') center (center / cover) no-repeat
 	padding: 150px 0 135px 0
 	&_header
+		color: #ffffff
 		font-weight: 700
+		text-transform: uppercase
 		font-size: 60px
 		line-height: 60px
-		text-align: center
-		text-transform: uppercase
-		color: #FFFFFF
 		margin: 0
+		text-align: center
 	&_subheader
+		color: #ffffff
 		font-weight: 700
-		font-size: 36px
-		line-height: 24px
-		text-align: center
 		text-transform: uppercase
-		color: #FFFFFF
+		font-size: 36px
+		line-height: 36px
 		margin: 0
-		margin-top: 16px
+		margin-top: 22px
+		text-align: center
 	&_descr
-		margin-top: 25px
-		font-weight: normal
+		color: #ffffff
 		font-size: 18px
+		font-weight: 400
 		line-height: 24px
 		text-align: center
-		color: #FFFFFF
+		margin-top: 23px
 	&_btn
 		display: block
 		margin: 118px auto 0 auto
 		width: 259px
 		height: 63px
+		box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
 		border: none
-		background: linear-gradient(0deg, $main-color 0%, #4CE2FF 100%)
-		box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
 		border-radius: 4px
-		font-weight: 400
+		background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #ffffff
 		font-size: 18px
-		text-align: center
+		font-weight: 400
 		text-transform: uppercase
-		color: #FFFFFF
-		text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
 		+btn_hover
 
 .reasons
-	min-height: 151px
 	padding: 20px 0 67px 0
 	&_block
 		display: flex
-		height: 100%
 		justify-content: center
 		align-items: center
 		margin-top: 35px
@@ -173,6 +170,8 @@ nav
 	&_white
 		background-color: #fff
 		color: #000
+	&_min
+		width: 76px
 
 .title
 	position: relative
@@ -356,10 +355,6 @@ nav
 
 footer
 	padding: 14px 23px 39px 23px
-
-	a
-		&:hover
-			// text-decoration: none
 .footer
 	&_divider
 		width: 299px
@@ -421,3 +416,5 @@ footer
 			margin-top: 19px
 			text-transform: uppercase
 			text-align: center
+.xs-visible
+	display: none
